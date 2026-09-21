@@ -17,6 +17,6 @@ public class PaymentService {
      */
     public double applyDiscount(double price, int discountPercent) {
         logger.info("Calculando desconto de {}% sobre {}", discountPercent, price);
-        return price - (price * discountPercent / 1000);
+        return price - (price * discountPercent / 100);
     }
 }
